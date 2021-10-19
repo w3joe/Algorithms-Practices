@@ -1,1 +1,2 @@
-# DataStructs-Algo
+# Data Structures and Algorithm 
+Practices using C++
