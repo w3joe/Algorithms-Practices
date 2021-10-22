@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
 using namespace std;
 struct Checker {
 	bool operator()(const std::pair<int, int>& a, const std::pair<int, int>& b) {
@@ -10,7 +9,6 @@ struct Checker {
 	}
 };
 int main()
-
 {
 	int num;
 	vector<int> list;
@@ -40,9 +38,6 @@ int main()
 	}
 	Checker checker;
 	sort(desc.rbegin(), desc.rend(), checker);
-	for (int i = 0; i < desc.size(); i++)
-	{
-		for (int j = 0; j < desc[i].first; j++)cout << desc[i].second << " ";
-	}
+	for (int i = 0; i < desc.size(); i++)for (int j = 0; j < desc[i].first; j++)cout << desc[i].second << " ";
 }
 
