@@ -5,8 +5,9 @@ using namespace std;
 int main()
 {
     string textinput;
+    string unallowedStr = "@$^";
     int N = 0;
     getline(cin, textinput);
-    for (int i = 0; i < textinput.length(); i++)if (isspace(textinput[i]))N++ ;
+    for (int i = 0; i < textinput.length(); i++)if(unallowedStr.find(textinput[i]) != std::string::npos)N++;
     cout << N;
 }
